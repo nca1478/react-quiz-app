@@ -1,6 +1,7 @@
 import React from 'react'
 import './index.css'
+import { AppRouter } from './Routers/AppRouter'
 
 export const App = () => {
-  return <h1>Hello World!!!</h1>
+  return <AppRouter />
 }
