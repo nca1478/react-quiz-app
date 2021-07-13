@@ -39,7 +39,6 @@ export const Config = ({ history }) => {
       )
       .then(function ({ data }) {
         setQuestions(data.results)
-        console.log(questions)
 
         history.replace('/quiz')
       })
