@@ -1,7 +1,18 @@
-import React from 'react'
-import './index.css'
+import React, { useEffect, useState } from 'react'
 import { AppRouter } from './Routers/AppRouter'
+import { QuestionContext } from './context/QuestionContext'
+import './index.css'
 
 export const App = () => {
-  return <AppRouter />
+  const [questions, setQuestions] = useState([])
+
+  useEffect(() => {
+    setQuestions([])
+  }, [])
+
+  return (
+    <QuestionContext.Provider value={{ questions, setQuestions }}>
+      <AppRouter />
+    </QuestionContext.Provider>
+  )
 }

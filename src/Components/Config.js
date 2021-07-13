@@ -1,14 +1,15 @@
-import React, { useState } from 'react'
+import React, { useContext, useState } from 'react'
 import axios from '../config/axios'
 import Select from 'react-select'
+import { QuestionContext } from '../context/QuestionContext'
 import { numQuestions, categories, difficulties, types } from '../data/options'
 
-export const Config = () => {
+export const Config = ({ history }) => {
   const [numQuestion, setNumQuestion] = useState({})
   const [category, setCategory] = useState({})
   const [difficulty, setDifficulty] = useState({})
   const [type, setType] = useState({})
-  const [questions, setQuestions] = useState([])
+  const { questions, setQuestions } = useContext(QuestionContext)
 
   const handleNumQuestion = (selected) => {
     setNumQuestion(selected)
@@ -39,8 +40,8 @@ export const Config = () => {
       .then(function ({ data }) {
         setQuestions(data.results)
         console.log(questions)
-        // setStartTrivia(true)
-        // setShowForm(false)
+
+        history.replace('/quiz')
       })
       .catch(function (error) {
         console.log(error)
