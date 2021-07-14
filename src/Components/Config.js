@@ -1,15 +1,15 @@
 import React, { useContext, useState } from 'react'
-import axios from '../config/axios'
 import Select from 'react-select'
 import { QuestionContext } from '../context/QuestionContext'
 import { numQuestions, categories, difficulties, types } from '../data/options'
+import getApiUrl from '../config/api'
 
 export const Config = ({ history }) => {
+  const { setQuestions } = useContext(QuestionContext)
   const [numQuestion, setNumQuestion] = useState({})
   const [category, setCategory] = useState({})
   const [difficulty, setDifficulty] = useState({})
   const [type, setType] = useState({})
-  const { questions, setQuestions } = useContext(QuestionContext)
 
   const handleNumQuestion = (selected) => {
     setNumQuestion(selected)
@@ -30,23 +30,26 @@ export const Config = ({ history }) => {
   const handleStart = (e) => {
     e.preventDefault()
 
-    axios
-      .get(
-        `?amount=${numQuestion.value}` +
-          `&category=${category.value}` +
-          `&difficulty=${difficulty.value}` +
-          `&type=${type.value}`
-      )
-      .then(function ({ data }) {
-        setQuestions(data.results)
+    const API_URL = getApiUrl(
+      numQuestion.value,
+      category.value,
+      difficulty.value,
+      type.value
+    )
 
+    fetch(API_URL)
+      .then((res) => res.json())
+      .then((data) => {
+        const listQuestions = data.results.map((question) => ({
+          ...question,
+          answers: [
+            question.correct_answer,
+            ...question.incorrect_answers,
+          ].sort(() => Math.random() - 0.5),
+        }))
+
+        setQuestions(listQuestions)
         history.replace('/quiz')
-      })
-      .catch(function (error) {
-        console.log(error)
-      })
-      .then(function () {
-        // always executed
       })
   }
 
