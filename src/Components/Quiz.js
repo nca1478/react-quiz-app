@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import { QuestionContext } from '../context/QuestionContext'
 import { EndQuiz } from './EndQuiz'
-import { Questionaire } from './Questionaire'
+import { QuizList } from './QuizList'
 
 export const Quiz = () => {
   const { questions } = useContext(QuestionContext)
@@ -39,7 +39,7 @@ export const Quiz = () => {
             {currentIndex >= questions.length ? (
               <EndQuiz score={score} />
             ) : (
-              <Questionaire
+              <QuizList
                 handleNextQuestion={handleNextQuestion}
                 data={questions[currentIndex]}
                 handleAnswer={handleAnswer}

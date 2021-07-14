@@ -70,7 +70,7 @@ export const Config = ({ history }) => {
             <form onSubmit={handleStart}>
               <Select
                 classNamePrefix="react-select"
-                className="mb-2"
+                className="mb-3"
                 name="questions"
                 placeholder="Number of Questions..."
                 onChange={(value) => handleNumQuestion(value)}
@@ -79,7 +79,7 @@ export const Config = ({ history }) => {
               />
               <Select
                 classNamePrefix="react-select"
-                className="mb-2"
+                className="mb-3"
                 name="categories"
                 placeholder="Select Category..."
                 onChange={(value) => handleCategory(value)}
@@ -87,7 +87,7 @@ export const Config = ({ history }) => {
               />
               <Select
                 classNamePrefix="react-select"
-                className="mb-2"
+                className="mb-3"
                 name="difficulties"
                 placeholder="Select Difficulty..."
                 onChange={(value) => handleDifficulty(value)}
@@ -95,7 +95,7 @@ export const Config = ({ history }) => {
               />
               <Select
                 classNamePrefix="react-select"
-                className="mb-2"
+                className="mb-3"
                 name="types"
                 placeholder="Select Type..."
                 onChange={(value) => handleType(value)}
