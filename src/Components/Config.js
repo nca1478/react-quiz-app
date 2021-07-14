@@ -1,8 +1,10 @@
 import React, { useContext, useState } from 'react'
 import Select from 'react-select'
+import { ToastContainer, toast } from 'react-toastify'
 import { QuestionContext } from '../context/QuestionContext'
 import { numQuestions, categories, difficulties, types } from '../data/options'
 import getApiUrl from '../config/api'
+import 'react-toastify/dist/ReactToastify.css'
 
 export const Config = ({ history }) => {
   const { setQuestions } = useContext(QuestionContext)
@@ -48,13 +50,17 @@ export const Config = ({ history }) => {
           ].sort(() => Math.random() - 0.5),
         }))
 
-        setQuestions(listQuestions)
-        history.replace('/quiz')
+        if (listQuestions.length === 0) {
+          toast('Quiz not found, Try again...')
+        } else {
+          setQuestions(listQuestions)
+          history.replace('/quiz')
+        }
       })
   }
 
   return (
-    <div className="col-6">
+    <div className="col-sm-9 col-md-9 col-lg-6">
       <div className="card">
         <div className="card-header bg-primary text-light text-center">
           <span className="h3">Config the Quiz</span>
@@ -101,6 +107,18 @@ export const Config = ({ history }) => {
                 value="Start Quiz"
                 className="btn btn-dark btn-block w-100"
                 onClick={handleStart}
+              />
+
+              <ToastContainer
+                position="top-right"
+                autoClose={3000}
+                hideProgressBar={false}
+                newestOnTop={false}
+                closeOnClick
+                rtl={false}
+                pauseOnFocusLoss
+                draggable
+                pauseOnHover
               />
             </form>
           </div>
