@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import { QuestionContext } from '../context/QuestionContext'
+import { QuestionContext } from '../context/Question'
 import { EndQuiz } from './EndQuiz'
 import { QuizList } from './QuizList'
 
@@ -37,7 +37,7 @@ export const Quiz = () => {
           </div>
           <div className="card-body">
             {currentIndex >= questions.length ? (
-              <EndQuiz score={score} />
+              <EndQuiz score={score} questions={questions.length} />
             ) : (
               <QuizList
                 handleNextQuestion={handleNextQuestion}

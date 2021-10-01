@@ -1,7 +1,7 @@
 import React, { useContext, useState } from 'react'
 import Select from 'react-select'
 import { ToastContainer, toast } from 'react-toastify'
-import { QuestionContext } from '../context/QuestionContext'
+import { QuestionContext } from '../context/Question'
 import { numQuestions, categories, difficulties, types } from '../data/options'
 import getApiUrl from '../config/api'
 import 'react-toastify/dist/ReactToastify.css'
@@ -51,11 +51,15 @@ export const Config = ({ history }) => {
         }))
 
         if (listQuestions.length === 0) {
-          toast('Quiz not found, Try again...')
+          toast.error('Error: Quiz not found, try again...')
         } else {
           setQuestions(listQuestions)
           history.replace('/quiz')
         }
+      })
+      .catch((error) => {
+        console.log(error)
+        toast.error('Error: Cannot create the quiz...')
       })
   }
 
