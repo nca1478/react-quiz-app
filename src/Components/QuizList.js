@@ -7,9 +7,11 @@ export const QuizList = ({
   handleAnswer,
   handleNextQuestion,
   data: { question, correct_answer, answers },
+  questionNumber,
 }) => {
   return (
     <div className="card-text text-center">
+      <span className="h5">{`${questionNumber}. `}</span>
       <span
         className="h5"
         dangerouslySetInnerHTML={{ __html: question }}

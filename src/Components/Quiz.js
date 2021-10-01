@@ -44,6 +44,7 @@ export const Quiz = () => {
                 data={questions[currentIndex]}
                 handleAnswer={handleAnswer}
                 showAnswers={showAnswers}
+                questionNumber={currentIndex + 1}
               />
             )}
           </div>
