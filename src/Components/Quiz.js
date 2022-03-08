@@ -48,6 +48,9 @@ export const Quiz = () => {
               />
             )}
           </div>
+          <div className="card-footer text-center bg-primary text-white fw-bold">
+            <span>Copyright &copy; 2022 - React Quiz App</span>
+          </div>
         </div>
       </div>
     )
