@@ -1,66 +1,66 @@
-# toDo App
+# React Quiz App
 
-`toDo App` is a react web application that allows you to save a list of daily tasks.
+React Quiz App is a web application that allows you to answer a series of questions about some topics, for example movies, TV, sports, video games, among others.
 
-# Features
+## How to use?
+- Config the quiz.
+- Choose numbers of questions, categories, difficulty and types.
+- Press start quiz.
+- Resolve complete quiz.
+- At the end, you will be shown the number of correct and failed questions.
 
-- SPA `(Simple Page Application)`.
-- `Tasking list`.
-- `CRUD` features.
-- Login User Form (Local authentication with encrypt password).
-- Register User Form.
-- All data is stored on `localstorage`.
-- `Public and Private Routes`.
-- State Manage Component through `useState` hook.
-- State Manage App through `useReducer` hook.
-- Manage state globally through `useContext` hook.
-- For handling forms, i use `useForm` custom hook.
+## Features
 
-# General Information
+- SPA (Simple Page Application).
+- Public API connection (Open Trivia Database).
+- Questions numbers (10 to 50).
+- Questions categorias (movies, TV, sports, video games...)
+- Difficulty (Easy, medium and hard).
+- Questions types (Multiple choice or true/false).
+- State Manage Component through useState hook.
+- Manage state globally through useContext hook.
+
+## General Information
 
 - The purpose of this project is to practice the web technologies shown below.
 
-# Technologies Used
+## Tech Stack
 
 - HTML5.
-- CSS3 (Flexbox and Media Queries).
+- CSS3.
 - Bootstrap CSS Framework.
-- Responsive Design.
 - ReactJS.
 
-# React Technologies
+## React Technologies
 - [Create React App](https://create-react-app.dev/)
+- [Open Trivia Database](https://opentdb.com/)
 - [React Router Dom](https://v5.reactrouter.com/web/guides/quick-start)
-- [React prop-types](https://www.npmjs.com/package/prop-types)
 - [React Toastify](https://fkhadra.github.io/react-toastify/introduction)
 - [useContext Hook](https://es.reactjs.org/docs/hooks-reference.html#usecontext)
-- [useReducer Hook](https://es.reactjs.org/docs/hooks-reference.html#usereducer)
 
-# Development tools and other Technologies
+## Development tools and other Technologies
 
-- [Vscode](https://code.visualstudio.com/)
 - [Bootstrap 5.0](https://getbootstrap.com/)
 - [Nodejs](https://nodejs.org/en/)
 - [React 17.0.2](https://reactjs.org/)
-- [Font Awesome 5.15.3](https://fontawesome.com/v5/search)
-- [Animate.css](https://animate.style/)
+- [Vscode](https://code.visualstudio.com/)
 
-# Demo
+## Demo
 
-[toDo App](https://google.com)
+[React Quiz App](https://google.com)
 
-# Requirements
+## Requirements
 - Nodejs v14 or better.
 - React 17.0.2 or better.
 
-# Installation
+## Installation
 
 > npm install
 
-# Run the app
+## Run the app
 
 > npm start
 
-# Enter file
+## Enter file
 
 > /src/index.js
