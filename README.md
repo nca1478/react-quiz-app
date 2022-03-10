@@ -47,7 +47,7 @@ React Quiz App is a web application that allows you to answer a series of questi
 
 ## Demo
 
-[React Quiz App](https://google.com)
+[React Quiz App](https://quiz-app-njca.netlify.app/)
 
 ## Requirements
 - Nodejs v14 or better.

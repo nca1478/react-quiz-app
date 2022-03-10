@@ -15,7 +15,7 @@ export const EndQuiz = ({ score, questions }) => {
         Your Score is {score} / {questions}
       </h3>
 
-      <Link to="/" className="btn btn-dark w-25" onClick={handleReset}>
+      <Link to="/" className="btn btn-dark" onClick={handleReset}>
         Try Again
       </Link>
     </div>
