@@ -3,11 +3,11 @@
 React Quiz App is a web application that allows you to answer a series of questions about some topics, for example movies, TV, sports, video games, among others.
 
 ## How to use?
-- Config the quiz.
-- Choose numbers of questions, categories, difficulty and types.
-- Press start quiz.
-- Resolve complete quiz.
-- At the end, you will be shown the number of correct and failed questions.
+1. Config the quiz.
+2. Choose numbers of questions, categories, difficulty and types.
+3. Press start quiz.
+4. Resolve complete quiz.
+5. At the end, you will be shown the number of correct and failed questions.
 
 ## Features
 
