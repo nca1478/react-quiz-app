@@ -6,7 +6,7 @@ export const Welcome = () => {
     <div className="col-sm-9 col-md-9 col-lg-6">
       <div className="card">
         <div className="card-header bg-primary text-light text-center">
-          <span className="h3">Welcome to Quiz</span>
+          <span className="h3">Welcome to React Quiz App</span>
         </div>
         <div className="card-body d-flex flex-column justify-content-center align-items-center text-center">
           <h5 className="card-title">
@@ -23,7 +23,17 @@ export const Welcome = () => {
           </Link>
         </div>
         <div className="card-footer text-center bg-primary text-white fw-bold">
-          <span>Copyright &copy; 2022 - React Quiz App</span>
+          <span>
+            <a
+              href="https://nelsoncadenas.netlify.app/"
+              rel="noreferrer"
+              className="text-white text-decoration-none"
+              target="_blank"
+            >
+              Copyright &copy; 2022 <br />
+              Developed by: Nelson Cadenas
+            </a>
+          </span>
         </div>
       </div>
     </div>

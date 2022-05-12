@@ -49,7 +49,17 @@ export const Quiz = () => {
             )}
           </div>
           <div className="card-footer text-center bg-primary text-white fw-bold">
-            <span>Copyright &copy; 2022 - React Quiz App</span>
+            <span>
+              <a
+                href="https://nelsoncadenas.netlify.app/"
+                rel="noreferrer"
+                className="text-white text-decoration-none"
+                target="_blank"
+              >
+                Copyright &copy; 2022 <br />
+                Developed by: Nelson Cadenas
+              </a>
+            </span>
           </div>
         </div>
       </div>
