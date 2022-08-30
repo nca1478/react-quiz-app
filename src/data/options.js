@@ -4,52 +4,52 @@ export const numQuestions = [
   { value: 20, label: '20' },
   { value: 30, label: '30' },
   { value: 40, label: '40' },
-  { value: 50, label: '50' }
+  { value: 50, label: '50' },
 ]
 
 // Categories (category = value)
 export const categories = [
   {
     value: '',
-    label: 'Any Category'
+    label: 'Cualquier Categoría',
   },
-  { value: 9, label: 'General Knowledge' },
-  { value: 10, label: 'Entertainment: Books' },
-  { value: 11, label: 'Entertainment: Film' },
-  { value: 12, label: 'Entertainment: Music' },
-  { value: 13, label: 'Entertainment: Musicals & Theathers' },
-  { value: 14, label: 'Entertainment: Television' },
-  { value: 15, label: 'Entertainment: Video Games' },
-  { value: 16, label: 'Entertainment: Board Games' },
-  { value: 17, label: 'Science & Nature' },
-  { value: 18, label: 'Science: Computers' },
-  { value: 19, label: 'Science: Mathematics' },
-  { value: 20, label: 'Mythology' },
-  { value: 21, label: 'Sports' },
-  { value: 22, label: 'Geography' },
-  { value: 23, label: 'History' },
-  { value: 24, label: 'Politics' },
-  { value: 25, label: 'Art' },
-  { value: 26, label: 'Celebrities' },
-  { value: 27, label: 'Animals' },
-  { value: 28, label: 'Vehicles' },
-  { value: 29, label: 'Entertainment: Comics' },
-  { value: 30, label: 'Science: Gadgets' },
-  { value: 31, label: 'Entertainment: Japanese Anime & Manga' },
-  { value: 32, label: 'Entertainment: Cartoon & Animations' }
+  { value: 27, label: 'Animales' },
+  { value: 25, label: 'Arte' },
+  { value: 26, label: 'Celebridades' },
+  { value: 17, label: 'Ciencia & Naturaleza' },
+  { value: 18, label: 'Ciencia: Computadoras' },
+  { value: 30, label: 'Ciencia: Gadgets' },
+  { value: 19, label: 'Ciencia: Matemáticas' },
+  { value: 9, label: 'Conocimiento General' },
+  { value: 21, label: 'Deportes' },
+  { value: 31, label: 'Entretenimiento: Anime Japones & Manga' },
+  { value: 29, label: 'Entretenimiento: Dibujos Animados' },
+  { value: 32, label: 'Entretenimiento: Dibujos Animados & Animaciones' },
+  { value: 16, label: 'Entretenimiento: Juegos de Mesa' },
+  { value: 10, label: 'Entretenimiento: Libros' },
+  { value: 12, label: 'Entretenimiento: Música' },
+  { value: 13, label: 'Entretenimiento: Musicales y Teatros' },
+  { value: 11, label: 'Entretenimiento: Películas' },
+  { value: 14, label: 'Entretenimiento: Televisión' },
+  { value: 15, label: 'Entretenimiento: Video Juegos' },
+  { value: 22, label: 'Geografía' },
+  { value: 23, label: 'Historia' },
+  { value: 20, label: 'Mitología' },
+  { value: 24, label: 'Política' },
+  { value: 28, label: 'Vehículos' },
 ]
 
 // Difficulty (difficulty = value)
 export const difficulties = [
-  { value: '', label: 'Any Difficulty' },
-  { value: 'easy', label: 'Easy' },
-  { value: 'medium', label: 'Medium' },
-  { value: 'hard', label: 'Hard' }
+  { value: '', label: 'Cualquier Dificultad' },
+  { value: 'easy', label: 'Fácil' },
+  { value: 'medium', label: 'Medio' },
+  { value: 'hard', label: 'Difícil' },
 ]
 
 // Type (type = value)
 export const types = [
-  { value: '', label: 'Any Type' },
-  { value: 'multiple', label: 'Multiple Choice' },
-  { value: 'boolean', label: 'False / True' }
+  { value: '', label: 'Cualquier Tipo' },
+  { value: 'multiple', label: 'Selección Multiple' },
+  { value: 'boolean', label: 'Falso / Verdadero' },
 ]

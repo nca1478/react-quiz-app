@@ -30,11 +30,11 @@ export const QuizList = ({
         <div className="col">
           {showAnswers ? (
             <button className="btn btn-dark w-100" onClick={handleNextQuestion}>
-              Next Question
+              Próxima Pregunta
             </button>
           ) : (
             <button type="button" className="btn btn-dark w-100" disabled>
-              Please select an answer...
+              Por favor selecciona una respuesta...
             </button>
           )}
         </div>

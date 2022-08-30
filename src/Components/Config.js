@@ -51,7 +51,7 @@ export const Config = ({ history }) => {
         }))
 
         if (listQuestions.length === 0) {
-          toast.error('Error: Quiz not found, try again...')
+          toast.error('Error: Quiz no encontrado, intente nuevamente...')
         } else {
           setQuestions(listQuestions)
           history.replace('/quiz')
@@ -59,7 +59,7 @@ export const Config = ({ history }) => {
       })
       .catch((error) => {
         console.log(error)
-        toast.error('Error: Cannot create the quiz...')
+        toast.error('Error: No se puede crear el quiz...')
       })
   }
 
@@ -67,7 +67,7 @@ export const Config = ({ history }) => {
     <div className="col-sm-9 col-md-9 col-lg-6">
       <div className="card">
         <div className="card-header bg-primary text-light text-center">
-          <span className="h3">Config the Quiz</span>
+          <span className="h3">Configurar el Quiz</span>
         </div>
         <div className="card-body">
           <div className="card-text">
@@ -76,7 +76,7 @@ export const Config = ({ history }) => {
                 classNamePrefix="react-select"
                 className="mb-3"
                 name="questions"
-                placeholder="Number of Questions..."
+                placeholder="Número de preguntas..."
                 onChange={(value) => handleNumQuestion(value)}
                 options={numQuestions}
                 defaultValue={numQuestions[0].value}
@@ -85,7 +85,7 @@ export const Config = ({ history }) => {
                 classNamePrefix="react-select"
                 className="mb-3"
                 name="categories"
-                placeholder="Select Category..."
+                placeholder="Seleccionar categoría..."
                 onChange={(value) => handleCategory(value)}
                 options={categories}
               />
@@ -93,7 +93,7 @@ export const Config = ({ history }) => {
                 classNamePrefix="react-select"
                 className="mb-3"
                 name="difficulties"
-                placeholder="Select Difficulty..."
+                placeholder="Seleccionar dificultad..."
                 onChange={(value) => handleDifficulty(value)}
                 options={difficulties}
               />
@@ -101,14 +101,14 @@ export const Config = ({ history }) => {
                 classNamePrefix="react-select"
                 className="mb-3"
                 name="types"
-                placeholder="Select Type..."
+                placeholder="Seleccionar tipo..."
                 onChange={(value) => handleType(value)}
                 options={types}
               />
 
               <input
                 type="submit"
-                value="Start Quiz"
+                value="Comenzar Quiz"
                 className="btn btn-dark btn-block w-100"
                 onClick={handleStart}
               />

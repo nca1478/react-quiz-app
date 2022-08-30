@@ -12,11 +12,11 @@ export const EndQuiz = ({ score, questions }) => {
   return (
     <div className="d-flex flex-column align-items-center">
       <h3 className="text-center mb-3">
-        Your Score is {score} / {questions}
+        Tu puntaje es {score} / {questions}
       </h3>
 
       <Link to="/" className="btn btn-dark" onClick={handleReset}>
-        Try Again
+        Intentar Nuevamente
       </Link>
     </div>
   )

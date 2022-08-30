@@ -31,8 +31,8 @@ export const Quiz = () => {
           <div className="card-header bg-primary text-light text-center">
             <span className="h3">
               {currentIndex < questions.length
-                ? `Question ${currentIndex + 1}/${questions.length}`
-                : 'Quiz Ended'}
+                ? `Pregunta ${currentIndex + 1}/${questions.length}`
+                : 'Quiz Finalizado'}
             </span>
           </div>
           <div className="card-body">
@@ -57,7 +57,7 @@ export const Quiz = () => {
                 target="_blank"
               >
                 Copyright &copy; 2022 <br />
-                Developed by: Nelson Cadenas
+                Desarrollado por: Nelson Cadenas
               </a>
             </span>
           </div>

@@ -1,44 +1,46 @@
 # React Quiz App
 
-React Quiz App is a web application that allows you to answer a series of questions about some topics, for example movies, TV, sports, video games, among others.
+React Quiz App es una aplicación web que te permite responder una serie de preguntas sobre algunos temas por ejemplo cine, tv, deportes, videojuegos, entre otros.
 
-## How to use?
-1. Config the quiz.
-2. Choose numbers of questions, categories, difficulty and types.
-3. Press start quiz.
-4. Resolve complete quiz.
-5. At the end, you will be shown the number of correct and failed questions.
+## ¿Como usar la aplicación?
 
-## Features
+1. Configurar el quiz.
+2. Escoje el número de preguntas, categorías, dificultad y el tipo.
+3. Presiona empezar.
+4. Completa el quiz.
+5. Al final, será mostrado el número de respuestas correctas y fallidas.
 
-- SPA (Simple Page Application).
-- Public API connection (Open Trivia Database).
-- Questions numbers (10 to 50).
-- Questions categorias (movies, TV, sports, video games...)
-- Difficulty (Easy, medium and hard).
-- Questions types (Multiple choice or true/false).
-- State Manage Component through useState hook.
-- Manage state globally through useContext hook.
+## Características
 
-## General Information
+- SPA (Aplicación de una página).
+- Conexión a una API pública (Open Trivia Database).
+- Número de preguntas (10 to 50).
+- Categorías de preguntas (películas, TV, deportes, video juegos...)
+- Dificultad (Fácil, media and difícil).
+- Tipos de preguntas (Selección múltiple y falso/verdadero).
+- Manejo de los estados del componente con el hook useState.
+- Manejo del estado global de la aplicación con el hook useContext.
 
-- The purpose of this project is to practice the web technologies shown below.
+## Información General
 
-## Tech Stack
+- El propósito de este proyecto es practicar las tecnologías web que se muestran a continuación.
+
+## Tecnologías (Tech Stack)
 
 - HTML5.
 - CSS3.
 - Bootstrap CSS Framework.
 - ReactJS.
 
-## React Technologies
+## Tecnologías React
+
 - [Create React App](https://create-react-app.dev/)
 - [Open Trivia Database](https://opentdb.com/)
 - [React Router Dom](https://v5.reactrouter.com/web/guides/quick-start)
 - [React Toastify](https://fkhadra.github.io/react-toastify/introduction)
 - [useContext Hook](https://es.reactjs.org/docs/hooks-reference.html#usecontext)
 
-## Development tools and other Technologies
+## Herramientas de Desarrollo y otros
 
 - [Bootstrap 5.0](https://getbootstrap.com/)
 - [Nodejs](https://nodejs.org/en/)
@@ -49,18 +51,19 @@ React Quiz App is a web application that allows you to answer a series of questi
 
 [React Quiz App](https://quiz-app-njca.netlify.app/)
 
-## Requirements
-- Nodejs v14 or better.
-- React 17.0.2 or better.
+## Requerimientos
 
-## Installation
+- Nodejs v14 o superior.
+- React 17.0.2 o superior.
+
+## Instalación
 
 > npm install
 
-## Run the app
+## Ejecutar la aplicación
 
 > npm start
 
-## Enter file
+## Archivo de entrada
 
 > /src/index.js
